@@ -1,9 +1,11 @@
 # ⚡ Electric Vehicle (EV) Demand Prediction & Adoption Analysis
 ### Washington State Department of Licensing (WA DOL) Dataset
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B.svg)](https://ev-demandprediction.streamlit.app/)
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Streamlit App](https://img.shields.io/badge/Streamlit-Interactive%20Dashboard-FF4B4B.svg)](https://streamlit.io/)
 [![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook%20Executed-orange.svg)](notebooks/EV_Demand_Prediction_Analysis.ipynb)
+
+> 🚀 **Live Interactive Web Application:** Explore the live dashboard, forecast scenarios, and charging infrastructure calculator at **[https://ev-demandprediction.streamlit.app/](https://ev-demandprediction.streamlit.app/)**
 
 ---
 
@@ -13,9 +15,9 @@ This repository delivers an end-to-end data science, machine learning forecastin
 The project directly supports public policy, municipal utility operations, and grid infrastructure planning for the **Washington Clean Cars 2030** benchmark and the statutory mandate for **100% Zero-Emission Vehicles by 2035**.
 
 ### Key Deliverables:
+- **Live Interactive Web Dashboard** ([ev-demandprediction.streamlit.app](https://ev-demandprediction.streamlit.app/)): Multi-tab interactive simulation platform for scenario exploration, county drill-downs, and electrical grid sizing.
 - **Comprehensive Jupyter Notebook** ([notebooks/EV_Demand_Prediction_Analysis.ipynb](notebooks/EV_Demand_Prediction_Analysis.ipynb)): 100% pre-executed with markdown explanations, exploratory figures, and model benchmarks.
 - **Machine Learning Forecasting Engine** (`src/models.py`): Non-linear curve fitting, Polynomial Regression, Ridge, Random Forest, Gradient Boosting, and Bass Logistic Diffusion models.
-- **Interactive Streamlit Web Dashboard** (`app.py`): Multi-tab simulation platform for scenario exploration, county drill-downs, and electrical grid sizing.
 - **Sustainability & Infrastructure Sizer**: Quantifies annual electricity consumption (GWh), coincident peak grid power (MW), public DCFC / Level 2 charging ports needed, and avoided $CO_2$ emissions.
 - **CLI Query Tool** (`src/predict.py`): Instant forecast lookups for any year (2027–2035) or Washington county.
 
@@ -101,21 +103,25 @@ Models were evaluated using a time-series split (Train: 2011–2022, Test: 2023�
 
 ## 🚀 How to Run the Project
 
-### 1. Prerequisites & Installation
+### 🌐 1. Access the Live Web Application
+The fastest way to explore the project is via the live deployment hosted on Streamlit Community Cloud:  
+👉 **[https://ev-demandprediction.streamlit.app/](https://ev-demandprediction.streamlit.app/)**
+
+### 💻 2. Local Setup & Installation
 Ensure Python 3.10+ is installed. Clone the repository and install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Run the Interactive Streamlit Dashboard
+### 3. Run the Interactive Streamlit Dashboard Locally
 Launch the web interface locally:
 
 ```bash
 streamlit run app.py
 ```
 
-### 3. Query the CLI Forecaster
+### 4. Query the CLI Forecaster
 Query projected EV adoption metrics for any year or Washington county:
 
 ```bash
